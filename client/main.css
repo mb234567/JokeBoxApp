@@ -1,0 +1,162 @@
+body {
+  min-height: 100vh; 
+  width: 100vw;  
+  background-image: url(https://www.wallpaperflare.com/static/779/495/752/abstract-white-purple-decor-wallpaper.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+} 
+
+.nav-item a {
+  color:#7C78B8 ; 
+  font-size: 20px; 
+  font-weight: 600;
+} 
+.nav-item a:hover {
+  background-color: #4a4689; 
+  color: white;
+}  
+.navbar-collapse {
+  display: flex; 
+  justify-content: space-between;
+} 
+
+.imgFrame {
+  height: 200px;
+}  
+
+.prof {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.hideIt {
+  opacity: 0;
+} 
+
+.js-delete {
+  cursor: pointer;
+} 
+.js-delete:hover {
+  transform: scale(1.5);
+}
+
+.cpbox {
+  height: 500px; 
+  width: 100%; 
+  border: 1px solid black; 
+  background-image: url(https://wallpapercrafter.com/desktop/82736-space-digital-universe-purple-abstract-hd-4k-deviantart-cosmos.jpg);
+  background-size: cover; 
+  background-position: center;
+} 
+.change { 
+  height: 50px; 
+  width: 220px;
+  background-color: #470cc8; 
+  color: white; 
+  font-size: 22px;
+} 
+
+.Box {  
+  height: 400px;
+  width: 100%;  
+  border-radius: 10px; 
+  padding: 50px 20px; 
+  background-color: white; 
+  background-image: url(https://wallpapercrafter.com/desktop/82736-space-digital-universe-purple-abstract-hd-4k-deviantart-cosmos.jpg);
+  background-size: cover; 
+  background-position: center;
+}  
+#joke-text {
+  font-size: 23px; 
+  color: white;
+} 
+
+.Account { 
+  display: flex;  
+  align-items: center;
+} 
+#profile-name {
+  margin-top: 18px; 
+  font-size: 23px; 
+  margin-right: 14px; 
+  cursor: pointer;
+}  
+
+#MainPimg {
+  height: 70px; 
+  width: 70px; 
+  background-size: cover; 
+  background-position: center;
+  border-radius: 50%; 
+} 
+.btn-add{
+  width: 100%; 
+  height: 50px; 
+  background-color: #7451c1; 
+  font-size: 25px;
+  color: white;
+} 
+
+.box2 {
+  padding: 30px;
+} 
+
+.errBox{
+  border: 1px solid red;
+}
+
+.addjoke {
+  height: 40px;
+  width: 200px; 
+  background-color: #8d2cd7; 
+  font-size: 19px;
+  color: white;
+} 
+
+.save-joke {
+  height: 40px;
+  width: 200px;  
+  background-color: #8d2cd7;
+  font-size: 19px;
+  color: white;
+}
+
+.profile-card {
+  height: 320px; 
+  width: 300px; 
+  color: white;
+  border: 2px solid white;  
+  /* background-image: url(https://www.wallpaperflare.com/static/779/495/752/abstract-white-purple-decor-wallpaper.jpg); */ 
+  background-color: #6b0bd2;
+  background-size: cover; 
+  background-position: center; 
+} 
+.profile-card:hover{
+  transform: scale(1.2); 
+  cursor: pointer;
+} 
+
+.del-box {
+  width: 100%; 
+  height: 200px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: white;
+} 
+
+.joke-card {
+  height: 320px; 
+  width: 300px; 
+  color: white;
+  border: 2px solid white;  
+  /* background-image: url(https://www.wallpaperflare.com/static/779/495/752/abstract-white-purple-decor-wallpaper.jpg); */ 
+  background-color: #6b0bd2;
+  background-size: cover; 
+  background-position: center;  
+} 
+
+.remove-joke {
+  cursor: pointer;
+}

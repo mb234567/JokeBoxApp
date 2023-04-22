@@ -1,0 +1,23 @@
+<head>
+  <title>JokeBoxApp</title> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="row justify-content-center mt-3">
+    <div class="col-lg-5 text-center">
+      <h1 style="font-size: 40px; color: white; background-color: #655bb8;  cursor: pointer; box-shadow: 0 0 30px darkmagenta; border: 3px solid;">Welcome To Joke Central
+        <i class="bi bi-emoji-laughing"></i>
+      </h1> 
+    </div>  
+  </div>  
+   
+  <div class="container mainContainer">
+  </div> 
+</body>
+
+<template name="appBody">
+  {{> Template.dynamic template=header}}
+  {{> Template.dynamic template=body}}
+  {{> Template.dynamic template=footer}}
+</template>

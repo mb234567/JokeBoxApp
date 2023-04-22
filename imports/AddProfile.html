@@ -1,0 +1,44 @@
+<template name="addProfile">
+    <div class="row justify-content-center" style="margin-top: 90px;">
+        <div class="col-lg-8 text-center">
+            <button class="btn-add js-addModal">Add a Profile</button>
+        </div>
+    </div>
+    <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-lg-10 text-center imgFrame overflow-hidden">
+                            <img id="profImg" class="w-100" src="profile.png" alt="">
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">image</span>
+                        <input id="image" type="text" class="form-control" placeholder="Image URL" aria-label="image">
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text">First and last name</span>
+                        <input id="fname" type="text" aria-label="First name" class="form-control">
+                        <input id="lname" type="text" aria-label="Last name" class="form-control">
+                    </div> 
+                    <div class="input-group mb-3">
+                        <select class="form-select" aria-label="Default select example" id="gender">
+                            <option selected>Select Gender</option>
+                            <option value="f">Female</option>
+                            <option value="m">Male</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary js-saveProfile">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

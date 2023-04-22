@@ -1,0 +1,26 @@
+<template name="AddedJokes"> 
+    {{#if jokesEmpty}}
+    <div class="row justify-content-center m-5 p-5">
+        <div class="col-xl-10 m-5 p-5 text-center">
+            <h1 class="display-4" style="color:black;">No Jokes Added</h1>
+        </div>
+    </div> 
+    {{else}}
+    <div class="row justify-content-center">
+        <div class="col-lg-10 text-center">
+            <h2 style="color: white;">Added Jokes</h2>
+        </div>
+    </div> 
+    <div class="row">
+        {{#each joke}}
+        <div class="col-lg-4 text-center">
+            <div class=" joke-card m-3 p-3"> 
+                <input type="hidden" id="delJokeID"> 
+                <p>{{jokes}}</p> 
+                <p class="remove-joke">Remove Joke</p>
+            </div>
+        </div>
+        {{/each}}
+    </div> 
+    {{/if}}
+</template>

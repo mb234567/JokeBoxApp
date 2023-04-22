@@ -1,0 +1,30 @@
+<template name="listProfiles">
+    {{#if profilesEmpty}}
+    <div class="row justify-content-center m-5 p-5">
+        <div class="col-xl-10 m-5 p-5 text-center">
+            <h1 class="display-4" style="color:black;">No Profiles Detected</h1>
+        </div>
+    </div>
+    {{else}}
+    <div class="row">
+        <div class="col-lg-6">
+            <h6>Filter:</h6>
+            <button class="btn btn-info js-filterMales">Males</button>
+            <button class="btn btn-info js-filterFemales">Females</button>
+            <button class="btn btn-info js-filterAll">All</button>
+        </div>
+    </div>
+    <div class="row">
+        {{#each profiles}}
+        <div class="col-lg-4 text-center prof">
+            <div class=" profile-card m-3 p-3"> 
+                <input type="hidden" id="delID">
+                <img class="w-100 imgFrame overflow-hidden" src="{{profile}}" alt="">
+                <p class="fs-3">{{first}},{{surname}}</p>
+                <p class="remove-user">Remove Profile</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</template>

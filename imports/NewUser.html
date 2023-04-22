@@ -1,0 +1,31 @@
+<template name="NewUser">
+    <div class="row justify-content-center"  style="margin-top: 10px;">
+        <div class="col-lg-4 text-center"> 
+            <form>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="FirstName" aria-label="FirstName" id="nu-fname">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="LastName" aria-label="LastName" id="nu-lname">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" id="nu-email">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" minlength="6" placeholder="Username" aria-label="Username" id="nu-name">
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                    id="nu-password" minlength="8">
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="confirmPassword"
+                    aria-label="confirmPassword" id="nu-confirmPassword" minlength="8">
+            </div>
+            <button type="submit" class="btn btn-primary js-createUser">Create User</button>
+            <button type="button" class="btn btn-secondary">Cancel</button> 
+        </form>
+        </div>
+    </div>
+
+</template>
